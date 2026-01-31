@@ -61,9 +61,9 @@ export const About: React.FC = () => {
                         </div>
                         <div style={{ color: 'var(--pk-text-dim)', marginBottom: '8px', fontSize: '1.2rem' }}>DESENVOLVEDOR BACKEND</div>
                         <ul style={{ listStyleType: 'square', paddingLeft: '20px', color: 'var(--pk-text-main)', margin: 0 }}>
-                            <li style={{ marginBottom: '4px' }}>Desenvolvimento e manutenção de APIs RESTful escaláveis utilizando C# e .NET.</li>
-                            <li style={{ marginBottom: '4px' }}>Colaboração direta com o time de frontend e participação ativa em cerimônias Ágeis.</li>
-                            <li >Otimização de consultas SQL para garantir alta performance e integridade dos dados.</li>
+                            <li style={{ marginBottom: '4px' }}>Desenvolvimento de APIs RESTful em .NET Core utilizando Clean Architecture para garantir escalabilidade e desacoplamento de camadas.</li>
+                            <li style={{ marginBottom: '4px' }}>Implementação de persistência de dados com Entity Framework Core, aplicando Code-First e Migrations.</li>
+                            <li >Atuação em time Ágil (Scrum/Kanban), colaborando na definição de contratos de API com o Frontend.</li>
                         </ul>
                     </div>
 
