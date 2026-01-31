@@ -9,18 +9,24 @@ export const Home: React.FC = () => {
                     <h1 style={{ color: 'var(--pk-accent-gold)', textShadow: '2px 2px var(--pk-void)' }}>
                         ようこそ、私のポートフォリオへ。
                     </h1>
-                    <p style={{ color: 'var(--pk-text-dim)' }}>BEM VINDO AO MEU PORTFÓLIO!</p>
+                    <h2 style={{ color: 'var(--pk-accent-cyan)' }}>BEM VINDO AO MEU PORTFÓLIO!</h2>
                     <br />
-                    <p>Select a command from the sidebar to begin operation.</p>
-                    <p style={{ color: 'var(--pk-text-dim)' }}>COPYRIGHT (C) 2024</p>
+                    <h3 style={{ color: 'var(--pk-text-dim)' }}>Software Developer | ソフトウェア開発者</h3>
+                    <p>
+                        Estudante de Sistemas de Informação e Desenvolvedor Backend com foco em .NET.
+                        Experiência na criação de sistemas robustos, APIs e lógica de negócio, enquanto
+                        exploro desenvolvimento de jogos com Unity.
+                    </p>
+                    <p style={{ color: 'var(--pk-text-dim)' }}>VERSION 1.0</p>
                 </div>
             </Window>
 
             <Window title="INFO.TXT">
                 <ul style={{ listStyleType: 'square', paddingLeft: '20px', color: 'var(--pk-text-main)' }}>
-                    <li style={{ marginBottom: '8px' }}>Navigate using the <span style={{ color: 'var(--pk-accent-orange)' }}>COMMAND PANEL</span>.</li>
-                    <li style={{ marginBottom: '8px' }}>System is optimized for <span style={{ color: 'var(--pk-accent-cyan)' }}>PC-9801</span> architecture.</li>
-                    <li>Enjoy the pixel-perfect aesthetic!</li>
+                    <li style={{ marginBottom: '8px' }}>Status: Ativo</li>
+                    <li style={{ marginBottom: '8px' }}>Role: Software Developer (Backend)</li>
+                    <li style={{ marginBottom: '8px' }}>Main Stack: C# / .NET / Unity</li>
+                    <li style={{ marginBottom: '8px' }}>Location: Minas Gerais, Brasil</li>
                 </ul>
             </Window>
         </div>

@@ -14,21 +14,21 @@ const projects: Project[] = [
     {
         id: 1,
         title: 'Bullet Hell Game',
-        desc: 'A Unity bullet hell (danmaku) game focused on intense, pattern-based projectile combat.',
+        desc: 'Jogo bullet hell (danmaku) desenvolvido em Unity, focado em combates intensos com padrões complexos de projéteis.',
         tech: ['Unity', 'C#'],
         link: 'https://github.com/matheusbaeta/DanmakuBulletHell'
     },
     {
         id: 2,
         title: 'Weather App',
-        desc: 'Weather app that fetches real-time weather data from the OpenWeather API based on city input.',
+        desc: 'Aplicação de clima que consome dados meteorológicos em tempo real da API OpenWeather, com base na cidade informada pelo usuário.',
         tech: ['React', 'TypeScript', 'HTML', 'CSS'],
         link: 'https://github.com/matheusbaeta/WeatherApp'
     },
     {
         id: 3,
         title: 'Dice Game',
-        desc: 'A simple dice game that lets users roll up to three dice, add or remove dice, and shows the total score in a clean, easy-to-use interface.',
+        desc: 'Jogo de dados simples que permite ao usuário rolar até três dados, adicionar ou remover dados e visualizar a pontuação total em uma interface limpa e intuitiva.',
         tech: ['Kotlin', 'Android'],
         link: 'https://github.com/matheusbaeta/DiceGame'
     }
