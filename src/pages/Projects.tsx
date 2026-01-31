@@ -44,12 +44,15 @@ export const Projects: React.FC = () => {
                             border: '2px solid var(--pk-frame-base)',
                             padding: '16px',
                             background: 'var(--pk-indigo-mid)',
-                            boxShadow: '4px 4px 0 var(--pk-void)'
+                            boxShadow: '4px 4px 0 var(--pk-void)',
+                            display: 'flex',
+                            flexDirection: 'column',
+                            height: '100%'
                         }}>
                             <h3 style={{ margin: '0 0 12px 0', color: 'var(--pk-accent-gold)', borderBottom: '1px dashed var(--pk-frame-light)', paddingBottom: '4px' }}>
                                 {p.title}
                             </h3>
-                            <p style={{ fontSize: '1rem', color: 'var(--pk-text-main)', marginBottom: '16px' }}>{p.desc}</p>
+                            <p style={{ fontSize: '1rem', color: 'var(--pk-text-main)', marginBottom: '16px', flex: '1 0 auto' }}>{p.desc}</p>
                             <div style={{ marginBottom: '16px', display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                                 {p.tech.map(t => (
                                     <span key={t} style={{
@@ -65,7 +68,7 @@ export const Projects: React.FC = () => {
                             </div>
                             <ButtonRetro
                                 variant="monitor"
-                                style={{ width: '100%', fontSize: '0.9rem' }}
+                                style={{ width: '100%', fontSize: '0.9rem', marginTop: 'auto' }}
                                 href={p.link}
                             >
                                 VIEW PROJECT
