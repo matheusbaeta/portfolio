@@ -48,11 +48,36 @@ export const About: React.FC = () => {
                             aprendizado técnico e criativo, aplicando conceitos de programação e design
                             de sistemas.
                         </p>
+                    </div>
+                </div>
+            </Window>
 
-                        <p style={{ lineHeight: '1.6', color: 'var(--pk-text-main)' }}>
-                            Sou movido por curiosidade, aprendizado contínuo e pelo interesse em sistemas
-                            clássicos e jogos retrô. Atualmente, estou aberto a oportunidades.
-                        </p>
+            <Window title="WORKING_EXPERIENCE.BAT">
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
+                    <div style={{ borderBottom: '1px dashed var(--pk-frame-light)', paddingBottom: '16px' }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '8px' }}>
+                            <h3 style={{ margin: 0, color: 'var(--pk-accent-gold)', fontSize: '1.4rem' }}>SECOND MIND</h3>
+                            <span style={{ color: 'var(--pk-accent-gold)', fontSize: '1.4rem' }}>2025 - ATUALMENTE</span>
+                        </div>
+                        <div style={{ color: 'var(--pk-text-dim)', marginBottom: '8px', fontSize: '1.2rem' }}>DESENVOLVEDOR BACKEND</div>
+                        <ul style={{ listStyleType: 'square', paddingLeft: '20px', color: 'var(--pk-text-main)', margin: 0 }}>
+                            <li style={{ marginBottom: '4px' }}>Desenvolvimento e manutenção de APIs RESTful escaláveis utilizando C# e .NET.</li>
+                            <li style={{ marginBottom: '4px' }}>Colaboração direta com o time de frontend e participação ativa em cerimônias Ágeis.</li>
+                            <li >Otimização de consultas SQL para garantir alta performance e integridade dos dados.</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '8px' }}>
+                            <h3 style={{ margin: 0, color: 'var(--pk-accent-gold)', fontSize: '1.4rem' }}>VOLUNTÁRIO NA ONG RECANTO DOS ANIMAIS</h3>
+                            <span style={{ color: 'var(--pk-accent-gold)', fontSize: '1.4rem' }}>2025 - 2026</span>
+                        </div>
+                        <div style={{ color: 'var(--pk-text-dim)', marginBottom: '8px', fontSize: '1.2rem' }}>DESENVOLVEDOR BACKEND</div>
+                        <ul style={{ listStyleType: 'square', paddingLeft: '20px', color: 'var(--pk-text-main)', margin: 0 }}>
+                            <li style={{ marginBottom: '4px' }}>Criação de API RESTful com Node.js, Express e TypeScript para gestão de adoções.</li>
+                            <li style={{ marginBottom: '4px' }}>Modelagem do banco de dados PostgreSQL e definição de arquitetura.</li>
+                            <li >Implementação de regras de negócio e rotas para integração contínua com o frontend.</li>
+                        </ul>
                     </div>
                 </div>
             </Window>
