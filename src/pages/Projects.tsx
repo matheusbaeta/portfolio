@@ -34,25 +34,32 @@ export const Projects: React.FC = () => {
     return (
         <div className="page-projects">
             <Window title="PROJECTS_DIR">
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '1rem' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1.5rem' }}>
                     {projects.map((p) => (
-                        <div key={p.id} style={{ border: '1px dashed var(--color-gray)', padding: '10px' }}>
-                            <h3 style={{ margin: '0 0 10px 0', color: 'var(--color-bright-yellow)' }}>{p.title}</h3>
-                            <p style={{ fontSize: '0.9rem' }}>{p.desc}</p>
-                            <div style={{ margin: '10px 0' }}>
+                        <div key={p.id} style={{
+                            border: '2px solid var(--pk-frame-base)',
+                            padding: '16px',
+                            background: 'var(--pk-indigo-mid)',
+                            boxShadow: '4px 4px 0 var(--pk-void)'
+                        }}>
+                            <h3 style={{ margin: '0 0 12px 0', color: 'var(--pk-accent-gold)', borderBottom: '1px dashed var(--pk-frame-light)', paddingBottom: '4px' }}>
+                                {p.title}
+                            </h3>
+                            <p style={{ fontSize: '1rem', color: 'var(--pk-text-main)', marginBottom: '16px' }}>{p.desc}</p>
+                            <div style={{ marginBottom: '16px', display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
                                 {p.tech.map(t => (
                                     <span key={t} style={{
-                                        backgroundColor: 'var(--color-blue)',
-                                        color: 'var(--color-bright-white)',
+                                        backgroundColor: 'var(--pk-indigo-deep)',
+                                        border: '1px solid var(--pk-accent-cyan)',
+                                        color: 'var(--pk-accent-cyan)',
                                         padding: '2px 6px',
-                                        fontSize: '0.7rem',
-                                        marginRight: '4px'
+                                        fontSize: '0.8rem',
                                     }}>
                                         {t}
                                     </span>
                                 ))}
                             </div>
-                            <ButtonRetro variant="monitor" style={{ width: '100%', fontSize: '0.8rem' }}>VIEW SOURCE</ButtonRetro>
+                            <ButtonRetro variant="monitor" style={{ width: '100%', fontSize: '0.9rem' }}>VIEW SOURCE</ButtonRetro>
                         </div>
                     ))}
                 </div>

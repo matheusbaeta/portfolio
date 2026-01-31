@@ -1,49 +1,83 @@
 .retro-button {
-    background-color: var(--color-gray);
-    color: var(--color-bright-white);
-    border: 2px solid var(--window-border);
-    border-top-color: var(--color-bright-white);
-    border-left-color: var(--color-bright-white);
-    border-right-color: var(--color-gray);
-    border-bottom-color: var(--color-gray);
-    padding: 8px 16px;
+    /* Command Menu Style (Grid-like, heavy borders) */
+    background-color: var(--pk-indigo-mid);
+    color: var(--pk-accent-cyan);
+    border: 2px solid var(--pk-frame-base);
+
+    /* Beveled look implies a physical keyboard key or solid UI block */
+    border-top-color: var(--pk-frame-light);
+    border-left-color: var(--pk-frame-light);
+    border-right-color: var(--pk-frame-base);
+    border-bottom-color: var(--pk-frame-base);
+
+    padding: 10px 16px;
     font-family: var(--font-main);
-    font-size: 1rem;
-    cursor: pointer;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    transition: all 0.1s;
-    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
-    display: inline-block;
-    text-align: center;
+    cursor: pointer;
+    transition: none;
+    /* Instant feedback */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    text-shadow: 1px 1px 0 #000;
 }
 
+/* Hover: Highlight Selection */
 .retro-button:hover {
-    background-color: var(--color-blue);
-    color: var(--color-bright-white);
+    background-color: var(--pk-indigo-light);
+    color: var(--pk-text-bright);
+    border-color: var(--pk-accent-cyan);
+    box-shadow: inset 0 0 8px var(--pk-accent-cyan);
+    /* CRT Glow */
 }
 
+/* Active: Pressed Key */
 .retro-button:active {
-    border-top-color: var(--color-gray);
-    border-left-color: var(--color-gray);
-    border-right-color: var(--color-bright-white);
-    border-bottom-color: var(--color-bright-white);
-    transform: translate(2px, 2px);
+    background-color: var(--pk-accent-cyan);
+    color: var(--pk-void);
+    border-color: var(--pk-accent-cyan);
+    transform: translateY(2px);
     box-shadow: none;
+    text-shadow: none;
 }
 
-.retro-button.primary {
-    background-color: var(--color-blue);
-}
-
+/* Variant: Monitor / Menu Item */
 .retro-button.monitor {
-    /* Style usually seen in bottom menu bars */
-    background-color: var(--color-black);
-    border: 1px solid var(--color-bright-green);
-    color: var(--color-bright-green);
-    box-shadow: none;
+    background: transparent;
+    border: 1px solid var(--pk-frame-base);
+    color: var(--pk-text-dim);
+    text-align: left;
+    justify-content: flex-start;
+    padding-left: 12px;
 }
 
 .retro-button.monitor:hover {
-    background-color: var(--color-bright-green);
-    color: var(--color-black);
+    background: var(--pk-indigo-mid);
+    color: var(--pk-accent-gold);
+    border-color: var(--pk-accent-gold);
+}
+
+.retro-button.monitor::before {
+    content: "▶";
+    opacity: 0;
+    margin-right: 8px;
+    font-size: 0.8em;
+    color: var(--pk-accent-gold);
+}
+
+.retro-button.monitor:hover::before {
+    opacity: 1;
+}
+
+/* Nav Item Styling specifically */
+.retro-button.primary {
+    /* Selected State in Menu */
+    background-color: var(--pk-indigo-light);
+    color: var(--pk-accent-orange);
+    border-color: var(--pk-accent-orange);
+    box-shadow: inset 0 0 10px rgba(208, 112, 32, 0.2);
 }

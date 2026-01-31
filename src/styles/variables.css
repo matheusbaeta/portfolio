@@ -1,37 +1,62 @@
 :root {
-    /* PC-98 Palette */
-    --color-black: #000000;
-    --color-blue: #0000AA;
-    --color-red: #AA0000;
-    --color-magenta: #AA00AA;
-    --color-green: #00AA00;
-    --color-cyan: #00AAAA;
-    --color-yellow: #AAAA00;
-    --color-white: #AAAAAA;
-    /* Standard white/light gray */
+    /* PC-98 Game Palette - Source: YU-NO, Brandish, Rance */
 
-    --color-gray: #555555;
-    --color-bright-blue: #5555FF;
-    --color-bright-red: #FF5555;
-    --color-bright-magenta: #FF55FF;
-    --color-bright-green: #55FF55;
-    --color-bright-cyan: #55FFFF;
-    --color-bright-yellow: #FFFF55;
-    --color-bright-white: #FFFFFF;
+    /* Deep Voids & Backgrounds */
+    --pk-void: #000000;
+    --pk-indigo-deep: #080818;
+    /* Common background fill */
+    --pk-indigo-mid: #101030;
+    /* Panel backgrounds */
+    --pk-indigo-light: #202050;
+    /* Borders / Inactive areas */
 
-    /* Theme mappings */
-    --bg-color: var(--color-black);
-    --text-color: var(--color-bright-white);
-    --primary-color: var(--color-bright-green);
-    /* Common retro feel */
-    --secondary-color: var(--color-blue);
-    --accent-color: var(--color-bright-cyan);
-    --window-bg: var(--color-black);
-    --window-border: var(--color-white);
-    --window-title-bg: var(--color-blue);
-    --window-title-text: var(--color-bright-white);
+    /* Frame & Structure Colors */
+    --pk-frame-base: #505060;
+    /* Structural gray */
+    --pk-frame-light: #9090A0;
+    /* Highlights */
+    --pk-frame-shadow: #000000;
+    /* Deep shadows */
+
+    /* Text & Information */
+    --pk-text-main: #E0E0E0;
+    /* Off-white standard text */
+    --pk-text-dim: #9090B0;
+    /* Description / secondary */
+    --pk-text-bright: #FFFFFF;
+    /* High highlight */
+
+    /* Authentic Accents (Saturated, classic PC-98 palette) */
+    --pk-accent-cyan: #20C0D0;
+    /* Tech / Spirit / Data */
+    --pk-accent-gold: #D0A040;
+    /* Rarity / Header / Key item */
+    --pk-accent-crimson: #C03030;
+    /* Danger / Important */
+    --pk-accent-emerald: #108040;
+    /* HP / Status OK */
+    --pk-accent-orange: #D07020;
+    /* Menu selection */
+
+    /* Component Mappings */
+    --bg-color: var(--pk-indigo-deep);
+    --text-color: var(--pk-text-main);
+
+    /* Window System (VN Text Box Style) */
+    --win-bg: rgba(8, 8, 24, 0.95);
+    /* Slightly transparent */
+    --win-border-outer: var(--pk-frame-light);
+    --win-border-mid: var(--pk-frame-base);
+    --win-border-inner: var(--pk-void);
+
+    /* Command Menu (Buttons) */
+    --btn-bg: var(--pk-indigo-mid);
+    --btn-bg-hover: var(--pk-indigo-light);
+    --btn-border: var(--pk-accent-cyan);
+    --btn-text: var(--pk-accent-cyan);
+    --btn-text-active: var(--pk-text-bright);
 
     /* Typography */
     --font-main: 'VT323', monospace;
-    --font-header: 'Press Start 2P', cursive;
+    --spacing-base: 4px;
 }

@@ -1,59 +1,70 @@
 .retro-window {
-    background-color: var(--window-bg);
-    border: 2px solid var(--window-border);
-    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5);
-    margin-bottom: 1.5rem;
+    position: relative;
+    background-color: var(--win-bg);
+    /* Complex Multi-Border System (Authentic to PC-98 Frames) */
+    border: 2px solid var(--win-border-outer);
+    box-shadow:
+        inset 0 0 0 2px var(--pk-void),
+        /* Gap */
+        inset 0 0 0 4px var(--win-border-mid),
+        /* Inner Frame */
+        0 0 0 1px var(--pk-void),
+        /* Outer sep */
+        4px 4px 0px rgba(0, 0, 0, 0.8);
+    /* Shadow */
+
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
+    /* "Heavy" feel */
+}
+
+/* Decorative corner pieces often seen in VNs */
+.retro-window::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom: 4px;
+    border: 1px solid var(--pk-indigo-light);
+    pointer-events: none;
+    z-index: 0;
 }
 
 .retro-window-title-bar {
-    background: var(--window-title-bg);
-    /* Gradient simulation for title bar common in some PC-98 apps */
-    background: linear-gradient(90deg, var(--window-title-bg) 0%, var(--color-bright-blue) 100%);
-    padding: 4px 8px;
+    background: linear-gradient(90deg, var(--pk-indigo-mid) 0%, var(--pk-indigo-deep) 100%);
+    padding: 8px 12px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid var(--window-border);
+    border-bottom: 2px solid var(--win-border-mid);
+    margin: 6px 6px 0 6px;
+    /* Inset title bar */
+    position: relative;
+    z-index: 1;
 }
 
 .retro-window-title {
-    color: var(--window-title-text);
+    color: var(--pk-accent-cyan);
     font-family: var(--font-header);
-    font-size: 1rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
-}
-
-.retro-window-controls {
-    display: flex;
-    gap: 4px;
-}
-
-.retro-window-button {
-    width: 16px;
-    height: 16px;
-    background-color: var(--window-border);
-    border: 1px solid var(--window-bg);
-    box-shadow: inset 1px 1px var(--color-white), inset -1px -1px var(--color-gray);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-black);
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 1;
-}
-
-.retro-window-button:active {
-    box-shadow: inset 1px 1px var(--color-gray), inset -1px -1px var(--color-white);
-    transform: translate(1px, 1px);
+    letter-spacing: 2px;
+    text-shadow: 0 0 4px var(--pk-accent-cyan);
 }
 
 .retro-window-content {
-    padding: 16px;
-    color: var(--text-color);
+    padding: 24px;
+    color: var(--pk-text-main);
     overflow-y: auto;
+    position: relative;
+    z-index: 1;
+    font-size: 1.1em;
+}
+
+/* Typography override for game-text feel */
+.retro-window-content p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
 }

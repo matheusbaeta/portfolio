@@ -8,24 +8,46 @@ import { Contact } from './pages/Contact';
 
 function App() {
   return (
-    <div className="app-container" style={{
-      display: 'flex',
+    <div className="app-main-frame" style={{
+      /* Fixed layout container mimicking a game screen */
+      display: 'grid',
+      gridTemplateColumns: 'minmax(240px, 20%) 1fr',
       height: '100vh',
-      padding: '20px',
-      gap: '20px',
-      maxWidth: '1200px',
-      margin: '0 auto'
+      width: '100vw',
+      backgroundColor: 'var(--pk-void)',
+      overflow: 'hidden'
     }}>
-      <aside style={{ width: '250px', flexShrink: 0 }}>
+
+      {/* SIDEBAR: Command Menu Panel */}
+      <aside style={{
+        borderRight: '4px double var(--pk-frame-base)',
+        backgroundColor: 'var(--pk-indigo-deep)',
+        padding: '16px',
+        display: 'flex',
+        flexDirection: 'column',
+        boxShadow: 'inset -4px 0 10px rgba(0,0,0,0.5)',
+        zIndex: 10
+      }}>
         <NavbarRetro />
       </aside>
-      <main style={{ flex: 1, overflowY: 'auto' }}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
+
+      {/* VIEWPORT: The "Scene" or "Data View" */}
+      <main style={{
+        position: 'relative',
+        overflowY: 'auto',
+        padding: '30px 40px',
+        /* CRT curved corner effect illusion (optional, keeping clean for now) */
+        background: 'var(--bg-color)',
+        backgroundImage: 'radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.4) 100%)'
+      }}>
+        <div style={{ maxWidth: '1000px', margin: '0 0' }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
       </main>
     </div>
   );

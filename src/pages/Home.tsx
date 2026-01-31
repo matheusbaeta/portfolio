@@ -6,20 +6,20 @@ export const Home: React.FC = () => {
         <div className="page-home">
             <Window title="WELCOME.EXE">
                 <div style={{ textAlign: 'center', padding: '20px' }}>
-                    <h1 style={{ color: 'var(--color-bright-green)', textShadow: '2px 2px var(--color-black)' }}>
+                    <h1 style={{ color: 'var(--pk-accent-gold)', textShadow: '2px 2px var(--pk-void)' }}>
                         PORTFOLIO SYSTEM
                     </h1>
-                    <p>VERSION 1.0</p>
-                    <p>COPYRIGHT (C) 2024</p>
+                    <p style={{ color: 'var(--pk-text-dim)' }}>VERSION 1.0</p>
+                    <p style={{ color: 'var(--pk-text-dim)' }}>COPYRIGHT (C) 2024</p>
                     <br />
-                    <p>Select an option from the menu to begin.</p>
+                    <p style={{ color: 'var(--pk-accent-cyan)' }}>Select a command from the sidebar to begin operation.</p>
                 </div>
             </Window>
 
             <Window title="TIPS.TXT">
-                <ul style={{ listStyleType: 'square', paddingLeft: '20px' }}>
-                    <li>Navigate using the sidebar menu.</li>
-                    <li>System is optimized for retro-compatibility.</li>
+                <ul style={{ listStyleType: 'square', paddingLeft: '20px', color: 'var(--pk-text-main)' }}>
+                    <li style={{ marginBottom: '8px' }}>Navigate using the <span style={{ color: 'var(--pk-accent-orange)' }}>COMMAND PANEL</span>.</li>
+                    <li style={{ marginBottom: '8px' }}>System is optimized for <span style={{ color: 'var(--pk-accent-cyan)' }}>PC-9801</span> architecture.</li>
                     <li>Enjoy the pixel-perfect aesthetic!</li>
                 </ul>
             </Window>
