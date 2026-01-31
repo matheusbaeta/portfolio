@@ -1,0 +1,59 @@
+.retro-window {
+    background-color: var(--window-bg);
+    border: 2px solid var(--window-border);
+    box-shadow: 4px 4px 0px rgba(0, 0, 0, 0.5);
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.retro-window-title-bar {
+    background: var(--window-title-bg);
+    /* Gradient simulation for title bar common in some PC-98 apps */
+    background: linear-gradient(90deg, var(--window-title-bg) 0%, var(--color-bright-blue) 100%);
+    padding: 4px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid var(--window-border);
+}
+
+.retro-window-title {
+    color: var(--window-title-text);
+    font-family: var(--font-header);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.retro-window-controls {
+    display: flex;
+    gap: 4px;
+}
+
+.retro-window-button {
+    width: 16px;
+    height: 16px;
+    background-color: var(--window-border);
+    border: 1px solid var(--window-bg);
+    box-shadow: inset 1px 1px var(--color-white), inset -1px -1px var(--color-gray);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-black);
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.retro-window-button:active {
+    box-shadow: inset 1px 1px var(--color-gray), inset -1px -1px var(--color-white);
+    transform: translate(1px, 1px);
+}
+
+.retro-window-content {
+    padding: 16px;
+    color: var(--text-color);
+    overflow-y: auto;
+}

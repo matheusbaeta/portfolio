@@ -1,0 +1,49 @@
+.retro-button {
+    background-color: var(--color-gray);
+    color: var(--color-bright-white);
+    border: 2px solid var(--window-border);
+    border-top-color: var(--color-bright-white);
+    border-left-color: var(--color-bright-white);
+    border-right-color: var(--color-gray);
+    border-bottom-color: var(--color-gray);
+    padding: 8px 16px;
+    font-family: var(--font-main);
+    font-size: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.1s;
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    text-align: center;
+}
+
+.retro-button:hover {
+    background-color: var(--color-blue);
+    color: var(--color-bright-white);
+}
+
+.retro-button:active {
+    border-top-color: var(--color-gray);
+    border-left-color: var(--color-gray);
+    border-right-color: var(--color-bright-white);
+    border-bottom-color: var(--color-bright-white);
+    transform: translate(2px, 2px);
+    box-shadow: none;
+}
+
+.retro-button.primary {
+    background-color: var(--color-blue);
+}
+
+.retro-button.monitor {
+    /* Style usually seen in bottom menu bars */
+    background-color: var(--color-black);
+    border: 1px solid var(--color-bright-green);
+    color: var(--color-bright-green);
+    box-shadow: none;
+}
+
+.retro-button.monitor:hover {
+    background-color: var(--color-bright-green);
+    color: var(--color-black);
+}

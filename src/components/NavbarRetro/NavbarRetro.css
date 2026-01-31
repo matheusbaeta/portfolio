@@ -1,0 +1,33 @@
+.retro-navbar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 100%;
+}
+
+.retro-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.retro-nav-item a {
+    display: block;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .retro-nav-list {
+        flex-direction: row;
+        gap: 0.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .retro-nav-item {
+        flex: 1 1 auto;
+    }
+}

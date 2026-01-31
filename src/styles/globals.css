@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap');
+@import './variables.css';
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    font-size: 1.2rem;
+    overflow-x: hidden;
+    line-height: 1.5;
+    /* Scanline effect optional, maybe later */
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 16px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--color-gray);
+    border-left: 1px solid var(--window-border);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--window-border);
+    border: 1px solid var(--window-bg);
+    box-shadow: inset 1px 1px var(--color-bright-white), inset -1px -1px var(--color-gray);
+}

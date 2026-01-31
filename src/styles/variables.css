@@ -1,0 +1,37 @@
+:root {
+    /* PC-98 Palette */
+    --color-black: #000000;
+    --color-blue: #0000AA;
+    --color-red: #AA0000;
+    --color-magenta: #AA00AA;
+    --color-green: #00AA00;
+    --color-cyan: #00AAAA;
+    --color-yellow: #AAAA00;
+    --color-white: #AAAAAA;
+    /* Standard white/light gray */
+
+    --color-gray: #555555;
+    --color-bright-blue: #5555FF;
+    --color-bright-red: #FF5555;
+    --color-bright-magenta: #FF55FF;
+    --color-bright-green: #55FF55;
+    --color-bright-cyan: #55FFFF;
+    --color-bright-yellow: #FFFF55;
+    --color-bright-white: #FFFFFF;
+
+    /* Theme mappings */
+    --bg-color: var(--color-black);
+    --text-color: var(--color-bright-white);
+    --primary-color: var(--color-bright-green);
+    /* Common retro feel */
+    --secondary-color: var(--color-blue);
+    --accent-color: var(--color-bright-cyan);
+    --window-bg: var(--color-black);
+    --window-border: var(--color-white);
+    --window-title-bg: var(--color-blue);
+    --window-title-text: var(--color-bright-white);
+
+    /* Typography */
+    --font-main: 'VT323', monospace;
+    --font-header: 'Press Start 2P', cursive;
+}

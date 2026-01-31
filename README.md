@@ -1,32 +1,48 @@
-# Personal Portfolio
+# PC-98 Retro Portfolio
 
-A modern, responsive portfolio website built to showcase my projects and skills.
+A retro-styled portfolio inspired by NEC PC-9800 series computers, built with React, Vite, and TypeScript.
 
-## 🚀 Tech Stack
+## Features
+- **Authentic PC-98 Aesthetics**: 16-color palette (optimized), VT323 typography, and retro GUI elements.
+- **Component-Based**: Reusable `Window`, `ButtonRetro`, and `NavbarRetro` components.
+- **Responsive Design**: Works on modern screens while maintaining the retro feel.
+- **Modern Tech Stack**: React 18, Vite, TypeScript, React Router.
 
-- **Framework:** [React 19](https://react.dev/)
-- **Language:** [TypeScript](https://www.typescriptlang.org/)
-- **Build Tool:** [Vite](https://vitejs.dev/)
-- **Styling:** CSS
+## Installation
 
-## 🛠️ Installation & Setup
+1.  Clone the repository:
+    ```bash
+    git clone <repository-url>
+    cd portfolio_frontend
+    ```
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd portfolio_frontend
-   ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+3.  Start the development server:
+    ```bash
+    npm run dev
+    ```
 
-3. **Run the development server**
-   ```bash
-   npm run dev
-   ```
+4.  Build for production:
+    ```bash
+    npm run build
+    ```
 
-## 📄 License
+## Customization
 
-This project is licensed under the MIT License.
+### Adding New Pages
+1.  Create a new file in `src/pages/`.
+2.  Import `Window` from `src/components/Window/Window`.
+3.  Add the route in `src/App.tsx`.
+4.  Add a menu item in `src/components/NavbarRetro/NavbarRetro.tsx`.
+
+### Changing Theme
+Edit `src/styles/variables.css` to change the 16-color palette or font settings.
+
+## License
+MIT
