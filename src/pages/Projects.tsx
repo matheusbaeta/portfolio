@@ -1,6 +1,7 @@
 import React from 'react';
 import { Window } from '../components/Window/Window';
 import { ButtonRetro } from '../components/ButtonRetro/ButtonRetro';
+import './Projects.css';
 
 interface Project {
     id: number;
@@ -38,30 +39,16 @@ export const Projects: React.FC = () => {
     return (
         <div className="page-projects">
             <Window title="PROJECTS_DIR">
-                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: '1.5rem' }}>
+                <div className="page-projects-grid">
                     {projects.map((p) => (
-                        <div key={p.id} style={{
-                            border: '2px solid var(--pk-frame-base)',
-                            padding: '16px',
-                            background: 'var(--pk-indigo-mid)',
-                            boxShadow: '4px 4px 0 var(--pk-void)',
-                            display: 'flex',
-                            flexDirection: 'column',
-                            height: '100%'
-                        }}>
-                            <h3 style={{ margin: '0 0 12px 0', color: 'var(--pk-accent-gold)', borderBottom: '1px dashed var(--pk-frame-light)', paddingBottom: '4px' }}>
+                        <div key={p.id} className="project-card">
+                            <h3 className="project-title">
                                 {p.title}
                             </h3>
-                            <p style={{ fontSize: '1rem', color: 'var(--pk-text-main)', marginBottom: '16px', flex: '1 0 auto' }}>{p.desc}</p>
-                            <div style={{ marginBottom: '16px', display: 'flex', flexWrap: 'wrap', gap: '6px' }}>
+                            <p className="project-desc">{p.desc}</p>
+                            <div className="project-tags">
                                 {p.tech.map(t => (
-                                    <span key={t} style={{
-                                        backgroundColor: 'var(--pk-indigo-deep)',
-                                        border: '1px solid var(--pk-accent-cyan)',
-                                        color: 'var(--pk-accent-cyan)',
-                                        padding: '2px 6px',
-                                        fontSize: '0.8rem',
-                                    }}>
+                                    <span key={t} className="project-tag">
                                         {t}
                                     </span>
                                 ))}

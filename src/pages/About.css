@@ -1,0 +1,105 @@
+.about-profile-container {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.about-profile-image {
+    width: 140px;
+    height: 160px;
+    background-color: var(--pk-indigo-deep);
+    border: 2px solid var(--pk-frame-base);
+    box-shadow: inset 0 0 10px var(--pk-void);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.about-profile-content {
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Typography Classes */
+.about-section-title {
+    color: var(--pk-accent-cyan);
+    margin-top: 0;
+    border-bottom: 2px solid var(--pk-frame-base);
+    padding-bottom: 8px;
+    font-size: 1.5rem;
+    /* Matched to Home H2 */
+}
+
+.about-work-title {
+    margin: 0;
+    color: var(--pk-accent-gold);
+    font-size: 1.2rem;
+    /* Reduced from 1.4rem to match Home H2 */
+}
+
+.about-work-date {
+    color: var(--pk-accent-gold);
+    font-size: 1.2rem;
+    /* Reduced from 1.4rem */
+}
+
+.about-work-role {
+    color: var(--pk-text-dim);
+    margin-bottom: 8px;
+    font-size: 1rem;
+    /* Reduced from 1.2rem */
+}
+
+.about-profile-details-grid {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.about-exp-item {
+    border-bottom: 1px dashed var(--pk-frame-light);
+    padding-bottom: 16px;
+}
+
+.about-exp-item:last-child {
+    border-bottom: none;
+}
+
+.about-exp-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 600px) {
+    .about-profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-profile-image {
+        margin-bottom: 16px;
+    }
+
+    .about-profile-content {
+        width: 100%;
+        text-align: left;
+    }
+
+    .about-profile-details-grid {
+        grid-template-columns: 80px 1fr;
+        font-size: 0.95rem;
+    }
+
+    .about-exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

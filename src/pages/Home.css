@@ -1,0 +1,50 @@
+.page-home-welcome {
+    text-align: center;
+    padding: 20px;
+}
+
+.home-japanese-title {
+    color: var(--pk-accent-gold);
+    text-shadow: 2px 2px var(--pk-void);
+    font-size: 1.5rem;
+    /* Default size */
+    margin: 0 0 1rem 0;
+}
+
+.home-main-title {
+    color: var(--pk-accent-cyan);
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+}
+
+.home-subtitle {
+    color: var(--pk-text-dim);
+    margin: 0 0 1rem 0;
+}
+
+.home-description {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.home-version {
+    color: var(--pk-text-dim);
+}
+
+.home-info-list {
+    list-style-type: square;
+    padding-left: 20px;
+    color: var(--pk-text-main);
+    margin: 0;
+}
+
+.home-info-item {
+    margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 480px) {
+    .home-japanese-title {
+        font-size: 1.2rem;
+    }
+}

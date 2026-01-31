@@ -22,10 +22,21 @@
 @media (max-width: 768px) {
     .retro-navbar {
         height: auto;
+        flex-direction: row;
+        width: 100%;
+        overflow-x: auto;
+    }
+
+    /* Make windows shrink/grow on mobile or stay fixed */
+    .retro-navbar>* {
+        flex: 1;
+        min-width: 200px;
+        /* Ensure they don't get too squashed */
     }
 
     .retro-nav-list {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
 }

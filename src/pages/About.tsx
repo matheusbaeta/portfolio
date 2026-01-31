@@ -1,27 +1,19 @@
 import React from 'react';
 import { Window } from '../components/Window/Window';
+import './About.css';
 
 export const About: React.FC = () => {
     return (
         <div className="page-about">
             <Window title="PROFILE.BAT">
-                <div style={{ display: 'flex', gap: '30px', alignItems: 'flex-start', flexWrap: 'wrap' }}>
-                    <div style={{
-                        width: '140px',
-                        height: '160px',
-                        backgroundColor: 'var(--pk-indigo-deep)',
-                        border: '2px solid var(--pk-frame-base)',
-                        boxShadow: 'inset 0 0 10px var(--pk-void)',
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center'
-                    }}>
+                <div className="about-profile-container">
+                    <div className="about-profile-image">
                         <span style={{ fontSize: '0.9rem', color: 'var(--pk-text-dim)' }}>[NO IMG]</span>
                     </div>
-                    <div style={{ flex: 1 }}>
-                        <h2 style={{ color: 'var(--pk-accent-cyan)', marginTop: 0, borderBottom: '2px solid var(--pk-frame-base)', paddingBottom: '8px' }}>USER PROFILE</h2>
+                    <div className="about-profile-content">
+                        <h1 className="about-section-title">USER PROFILE</h1>
 
-                        <div style={{ display: 'grid', gridTemplateColumns: '100px 1fr', gap: '8px', marginBottom: '16px' }}>
+                        <div className="about-profile-details-grid">
                             <span style={{ color: 'var(--pk-accent-gold)' }}>USER:</span>
                             <span>Matheus Henrique Sanches Baeta</span>
 
@@ -54,12 +46,12 @@ export const About: React.FC = () => {
 
             <Window title="WORKING_EXPERIENCE.BAT">
                 <div style={{ display: 'flex', flexDirection: 'column', gap: '20px' }}>
-                    <div style={{ borderBottom: '1px dashed var(--pk-frame-light)', paddingBottom: '16px' }}>
-                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '8px' }}>
-                            <h3 style={{ margin: 0, color: 'var(--pk-accent-gold)', fontSize: '1.4rem' }}>SECOND MIND</h3>
-                            <span style={{ color: 'var(--pk-accent-gold)', fontSize: '1.4rem' }}>2025 - ATUALMENTE</span>
+                    <div className="about-exp-item">
+                        <div className="about-exp-header">
+                            <h3 className="about-work-title">SECOND MIND</h3>
+                            <span className="about-work-date">2025 - ATUALMENTE</span>
                         </div>
-                        <div style={{ color: 'var(--pk-text-dim)', marginBottom: '8px', fontSize: '1.2rem' }}>DESENVOLVEDOR BACKEND</div>
+                        <div className="about-work-role">DESENVOLVEDOR BACKEND</div>
                         <ul style={{ listStyleType: 'square', paddingLeft: '20px', color: 'var(--pk-text-main)', margin: 0 }}>
                             <li style={{ marginBottom: '4px' }}>Desenvolvimento de APIs RESTful em .NET Core utilizando Clean Architecture para garantir escalabilidade e desacoplamento de camadas.</li>
                             <li style={{ marginBottom: '4px' }}>Implementação de persistência de dados com Entity Framework Core, aplicando Code-First e Migrations.</li>
@@ -67,12 +59,12 @@ export const About: React.FC = () => {
                         </ul>
                     </div>
 
-                    <div>
-                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '8px' }}>
-                            <h3 style={{ margin: 0, color: 'var(--pk-accent-gold)', fontSize: '1.4rem' }}>ONG RECANTO DOS ANIMAIS (VOLUNTÁRIO)</h3>
-                            <span style={{ color: 'var(--pk-accent-gold)', fontSize: '1.4rem' }}>2025 - 2026</span>
+                    <div className="about-exp-item">
+                        <div className="about-exp-header">
+                            <h3 className="about-work-title">ONG RECANTO DOS ANIMAIS (VOLUNTÁRIO)</h3>
+                            <span className="about-work-date">2025 - 2026</span>
                         </div>
-                        <div style={{ color: 'var(--pk-text-dim)', marginBottom: '8px', fontSize: '1.2rem' }}>DESENVOLVEDOR BACKEND</div>
+                        <div className="about-work-role">DESENVOLVEDOR BACKEND</div>
                         <ul style={{ listStyleType: 'square', paddingLeft: '20px', color: 'var(--pk-text-main)', margin: 0 }}>
                             <li style={{ marginBottom: '4px' }}>Criação de API RESTful com Node.js, Express e TypeScript para gestão de adoções.</li>
                             <li style={{ marginBottom: '4px' }}>Modelagem do banco de dados PostgreSQL e definição de arquitetura.</li>

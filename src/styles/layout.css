@@ -1,0 +1,65 @@
+/* Main Application Container */
+.app-main-frame {
+    display: grid;
+    grid-template-columns: minmax(240px, 20%) 1fr;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--pk-void);
+    overflow: hidden;
+}
+
+/* Sidebar (Command Menu Panel) */
+.app-sidebar {
+    border-right: 4px double var(--pk-frame-base);
+    background-color: var(--pk-indigo-deep);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: inset -4px 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    overflow-y: auto;
+    /* Allow scroll if sidebar is too tall */
+}
+
+/* Main Content Area (The "Scene") */
+.app-content {
+    position: relative;
+    overflow-y: auto;
+    padding: 30px 40px;
+    background: var(--bg-color);
+    background-image: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 0.4) 100%);
+    width: 100%;
+}
+
+.app-content-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* --- MOBILE RESPONSIVENESS (< 768px) --- */
+@media (max-width: 768px) {
+    .app-main-frame {
+        grid-template-columns: 1fr;
+        /* Single column */
+        grid-template-rows: auto 1fr;
+        /* Header takes auto height, content takes rest */
+    }
+
+    .app-sidebar {
+        border-right: none;
+        border-bottom: 4px double var(--pk-frame-base);
+        padding: 10px;
+        flex-direction: row;
+        /* Horizontal layout maybe? Or simple vertical mobile toggle */
+        box-shadow: inset 0 -4px 10px rgba(0, 0, 0, 0.5);
+        height: auto;
+        overflow-y: visible;
+        overflow-x: auto;
+        /* Allow horizontal scroll for nav items if needed */
+    }
+
+    .app-content {
+        padding: 15px 20px;
+        /* Reduced padding on mobile */
+    }
+}
