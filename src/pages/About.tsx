@@ -28,11 +28,11 @@ export const About: React.FC = () => {
                             <span style={{ color: 'var(--pk-accent-gold)' }}>CLASS:</span>
                             <span>Software Developer</span>
 
-                            {/* <span style={{ color: 'var(--pk-accent-gold)' }}>LEVEL:</span>
-                            <span>Intern</span> */}
-
                             <span style={{ color: 'var(--pk-accent-gold)' }}>SKILLS:</span>
                             <span style={{ color: 'var(--pk-accent-emerald)' }}>C#, JavaScript, TypeScript, Node.js, Python, C, Java</span>
+
+                            <span style={{ color: 'var(--pk-accent-gold)' }}>LANGUAGES:</span>
+                            <span>Inglês (Avançado), Japonês (Intermediário)</span>
                         </div>
 
                         <p style={{ lineHeight: '1.6', color: 'var(--pk-text-main)' }}>

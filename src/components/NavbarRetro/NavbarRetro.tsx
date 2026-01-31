@@ -34,7 +34,7 @@ export const NavbarRetro: React.FC = () => {
             </Window>
 
             <Window title="CONTATO">
-                <div style={{ fontSize: '0.9rem', color: 'var(--color-bright-green)' }}>
+                <div style={{ fontSize: '1rem', color: 'var(--color-bright-green)' }}>
                     <p>Github:
                         <a href="https://github.com/matheusbaeta" target="_blank">
                             matheusbaeta

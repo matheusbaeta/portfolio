@@ -40,7 +40,7 @@ function App() {
         background: 'var(--bg-color)',
         backgroundImage: 'radial-gradient(ellipse at center, transparent 0%, rgba(0,0,0,0.4) 100%)'
       }}>
-        <div style={{ maxWidth: '1000px', margin: '0 0' }}>
+        <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
