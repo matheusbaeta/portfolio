@@ -7,26 +7,30 @@ interface Project {
     title: string;
     desc: string;
     tech: string[];
+    link?: string;
 }
 
 const projects: Project[] = [
     {
         id: 1,
-        title: 'RETRO OS',
-        desc: 'A web-based operating system simulator.',
-        tech: ['React', 'CSS', 'Vite']
+        title: 'Bullet Hell Game',
+        desc: 'A Unity bullet hell (danmaku) game focused on intense, pattern-based projectile combat.',
+        tech: ['Unity', 'C#'],
+        link: 'https://github.com/matheusbaeta/DanmakuBulletHell'
     },
     {
         id: 2,
-        title: 'E-COMMERCE BOT',
-        desc: 'Automated trading bot for massive gains.',
-        tech: ['Python', 'Docker', 'AWS']
+        title: 'Weather App',
+        desc: 'Weather app that fetches real-time weather data from the OpenWeather API based on city input.',
+        tech: ['React', 'TypeScript', 'HTML', 'CSS'],
+        link: 'https://github.com/matheusbaeta/WeatherApp'
     },
     {
         id: 3,
-        title: 'PIXEL ART EDITOR',
-        desc: 'Online tool for creating 8-bit art.',
-        tech: ['Canvas API', 'TypeScript']
+        title: 'Dice Game',
+        desc: 'A simple dice game that lets users roll up to three dice, add or remove dice, and shows the total score in a clean, easy-to-use interface.',
+        tech: ['Kotlin', 'Android'],
+        link: 'https://github.com/matheusbaeta/DiceGame'
     }
 ];
 
@@ -59,7 +63,13 @@ export const Projects: React.FC = () => {
                                     </span>
                                 ))}
                             </div>
-                            <ButtonRetro variant="monitor" style={{ width: '100%', fontSize: '0.9rem' }}>VIEW SOURCE</ButtonRetro>
+                            <ButtonRetro
+                                variant="monitor"
+                                style={{ width: '100%', fontSize: '0.9rem' }}
+                                href={p.link}
+                            >
+                                VIEW PROJECT
+                            </ButtonRetro>
                         </div>
                     ))}
                 </div>

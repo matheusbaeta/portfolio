@@ -9,16 +9,14 @@ export const Home: React.FC = () => {
                     <h1 style={{ color: 'var(--pk-accent-gold)', textShadow: '2px 2px var(--pk-void)' }}>
                         ようこそ、私のポートフォリオへ。
                     </h1>
-                    <h1 style={{ color: 'var(--pk-accent-gold)', textShadow: '2px 2px var(--pk-void)' }}>
-                    </h1>
-                    <p style={{ color: 'var(--pk-text-dim)' }}>VERSION 1.0</p>
-                    <p style={{ color: 'var(--pk-text-dim)' }}>COPYRIGHT (C) 2024</p>
+                    <p style={{ color: 'var(--pk-text-dim)' }}>BEM VINDO AO MEU PORTFÓLIO!</p>
                     <br />
-                    <p style={{ color: 'var(--pk-accent-cyan)' }}>Select a command from the sidebar to begin operation.</p>
+                    <p>Select a command from the sidebar to begin operation.</p>
+                    <p style={{ color: 'var(--pk-text-dim)' }}>COPYRIGHT (C) 2024</p>
                 </div>
             </Window>
 
-            <Window title="TIPS.TXT">
+            <Window title="INFO.TXT">
                 <ul style={{ listStyleType: 'square', paddingLeft: '20px', color: 'var(--pk-text-main)' }}>
                     <li style={{ marginBottom: '8px' }}>Navigate using the <span style={{ color: 'var(--pk-accent-orange)' }}>COMMAND PANEL</span>.</li>
                     <li style={{ marginBottom: '8px' }}>System is optimized for <span style={{ color: 'var(--pk-accent-cyan)' }}>PC-9801</span> architecture.</li>

@@ -65,7 +65,7 @@ h4 {
 a {
     color: var(--pk-accent-cyan);
     text-decoration: none;
-    border-bottom: 1px dashed var(--pk-accent-cyan);
+    /* border-bottom: 1px dashed var(--pk-accent-cyan); */
 }
 
 a:hover {

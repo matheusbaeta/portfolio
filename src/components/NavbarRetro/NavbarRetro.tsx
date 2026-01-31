@@ -7,9 +7,9 @@ import './NavbarRetro.css';
 export const NavbarRetro: React.FC = () => {
     const navItems = [
         { name: 'HOME', path: '/' },
-        { name: 'ABOUT', path: '/about' },
-        { name: 'PROJECTS', path: '/projects' },
-        { name: 'CONTACT', path: '/contact' },
+        { name: 'SOBRE', path: '/about' },
+        { name: 'PROJETOS', path: '/projects' }
+        // { name: 'CONTACT', path: '/contact' },
     ];
 
     return (
@@ -33,11 +33,19 @@ export const NavbarRetro: React.FC = () => {
                 </ul>
             </Window>
 
-            <Window title="INFORMAÇÕES RÁPIDAS">
+            <Window title="CONTATO">
                 <div style={{ fontSize: '0.9rem', color: 'var(--color-bright-green)' }}>
-                    <p>Programação: C#, .NET, Unity, APIs RESTful, Java, JavaScript, TypeScript, Python, C</p>
-                    <p>Idiomas: Português (Nativo), Inglês (Avançado), Japonês (Intermediário)</p>
-                    <p>Formação: Sistemas de Informação 2024 - 2028</p>
+                    <p>Github:
+                        <a href="https://github.com/matheusbaeta" target="_blank">
+                            matheusbaeta
+                        </a>
+                    </p>
+                    <p>Email: matheushsbaeta@gmail.com</p>
+                    <p>LinkedIn:
+                        <a href="https://www.linkedin.com/in/matheushsbaeta" target="_blank">
+                            matheusbaeta
+                        </a>
+                    </p>
                 </div>
             </Window>
         </nav>
