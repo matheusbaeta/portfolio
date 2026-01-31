@@ -28,9 +28,8 @@ body {
 
 * {
     box-sizing: border-box;
-    user-select: none;
-    /* Games usually aren't selectable */
-    cursor: default;
+    /* user-select: none; - Removed to allow text copying */
+    /* cursor: default; - Removed to allow text cursor */
 }
 
 /* Custom Scrollbar - "Inventory List" style */

@@ -69,7 +69,7 @@ export const About: React.FC = () => {
 
                     <div>
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: '8px' }}>
-                            <h3 style={{ margin: 0, color: 'var(--pk-accent-gold)', fontSize: '1.4rem' }}>VOLUNTÁRIO NA ONG RECANTO DOS ANIMAIS</h3>
+                            <h3 style={{ margin: 0, color: 'var(--pk-accent-gold)', fontSize: '1.4rem' }}>ONG RECANTO DOS ANIMAIS (VOLUNTÁRIO)</h3>
                             <span style={{ color: 'var(--pk-accent-gold)', fontSize: '1.4rem' }}>2025 - 2026</span>
                         </div>
                         <div style={{ color: 'var(--pk-text-dim)', marginBottom: '8px', fontSize: '1.2rem' }}>DESENVOLVEDOR BACKEND</div>
