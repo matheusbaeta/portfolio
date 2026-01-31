@@ -57,6 +57,6 @@
     --btn-text-active: var(--pk-text-bright);
 
     /* Typography */
-    --font-main: 'VT323', monospace;
+    --font-main: 'VT323', 'DotGothic16', monospace;
     --spacing-base: 4px;
 }

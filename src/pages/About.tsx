@@ -23,16 +23,16 @@ export const About: React.FC = () => {
 
                         <div style={{ display: 'grid', gridTemplateColumns: '100px 1fr', gap: '8px', marginBottom: '16px' }}>
                             <span style={{ color: 'var(--pk-accent-gold)' }}>NAME:</span>
-                            <span>Matheus</span>
+                            <span>Matheus Henrique Sanches Baeta</span>
 
                             <span style={{ color: 'var(--pk-accent-gold)' }}>CLASS:</span>
-                            <span>Full Stack Developer</span>
+                            <span>Back End Developer and Game Developer</span>
 
                             <span style={{ color: 'var(--pk-accent-gold)' }}>LEVEL:</span>
-                            <span>Senior</span>
+                            <span>Intern</span>
 
                             <span style={{ color: 'var(--pk-accent-gold)' }}>SKILLS:</span>
-                            <span style={{ color: 'var(--pk-accent-emerald)' }}>React, TypeScript, Node.js, Python, Go</span>
+                            <span style={{ color: 'var(--pk-accent-emerald)' }}>C#, JavaScript, TypeScript, Node.js, Python, C, Java</span>
                         </div>
 
                         <p style={{ lineHeight: '1.6', color: 'var(--pk-text-main)' }}>

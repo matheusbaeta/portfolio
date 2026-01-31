@@ -7,7 +7,9 @@ export const Home: React.FC = () => {
             <Window title="WELCOME.EXE">
                 <div style={{ textAlign: 'center', padding: '20px' }}>
                     <h1 style={{ color: 'var(--pk-accent-gold)', textShadow: '2px 2px var(--pk-void)' }}>
-                        PORTFOLIO SYSTEM
+                        ようこそ、私のポートフォリオへ。
+                    </h1>
+                    <h1 style={{ color: 'var(--pk-accent-gold)', textShadow: '2px 2px var(--pk-void)' }}>
                     </h1>
                     <p style={{ color: 'var(--pk-text-dim)' }}>VERSION 1.0</p>
                     <p style={{ color: 'var(--pk-text-dim)' }}>COPYRIGHT (C) 2024</p>

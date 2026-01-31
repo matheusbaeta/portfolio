@@ -33,11 +33,11 @@ export const NavbarRetro: React.FC = () => {
                 </ul>
             </Window>
 
-            <Window title="SYSTEM STATUS">
+            <Window title="INFORMAÇÕES RÁPIDAS">
                 <div style={{ fontSize: '0.9rem', color: 'var(--color-bright-green)' }}>
-                    <p>MEM: 640KB OK</p>
-                    <p>OS: PC-9801</p>
-                    <p>TIME: {new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}</p>
+                    <p>Programação: C#, .NET, Unity, APIs RESTful, Java, JavaScript, TypeScript, Python, C</p>
+                    <p>Idiomas: Português (Nativo), Inglês (Avançado), Japonês (Intermediário)</p>
+                    <p>Formação: Sistemas de Informação 2024 - 2028</p>
                 </div>
             </Window>
         </nav>

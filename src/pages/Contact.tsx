@@ -51,7 +51,7 @@ export const Contact: React.FC = () => {
                         <input
                             className="retro-input"
                             type="text"
-                            value="matheus@example.com"
+                            value="matheushsbaeta@gmail.com"
                             disabled
                             style={disabledInputStyle}
                         />
